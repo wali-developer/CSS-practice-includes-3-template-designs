@@ -1,0 +1,466 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4{
+    font-family: Arial, sans-serif;
+}
+
+#header{
+    margin: 0;
+}
+
+.section-padd{
+    padding: 0 100px;
+}
+
+/******Top bar*******/
+#topbar{
+    background-color: rgb(85, 98, 115);
+    overflow: auto;
+}
+#topbar p{
+    color: white;
+    float: left;
+    font-size: 18px;
+}
+#topbar #social-links{
+    color: white;
+    float: right;
+    padding: 15px;
+}
+.fab{
+    background-color: white;
+    color: rgb(85, 98, 115);
+    padding: 8px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.fab:hover{
+    background-color: #ee5253;
+    color: white;
+}
+.fa-whatsapp{
+    padding: 8px 9px;
+}
+.fa-whatsapp:hover{
+    color: white;
+    background-color: #67fa62;
+}
+.fa-instagram{
+    padding: 8px 9px;
+}
+.fa-instagram:hover{
+    color: white;
+    background-color: #bc2a8d;
+}
+.fa-facebook:hover{
+    color: white;
+    background-color:#4267B2;
+}
+.fa-twitter:hover{
+    color: white;
+    background-color: #1DA1F2;
+}
+
+/******logo bar*******/
+#logo img{
+    width: 200px;
+}
+
+/******navigation bar*******/
+#nav-menu{
+    background-color: #ee5253;
+    overflow: auto;
+}
+#nav-menu ul{
+    list-style-type: none;
+    margin: 0;
+}
+#nav-menu li{
+    float: left;
+    padding: 15px 0;
+}
+#nav-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 40px;
+    transition: 0.5s;
+}
+#nav-menu a:hover{
+    color: black;
+    font-weight: 700;
+}
+
+/******Footer*******/
+#footer{
+    overflow: auto;
+    background-color: rgb(85, 98, 115);
+}
+.col-3{
+    width: 33.33%;
+    float: left;
+    color: white;
+    padding-right: 100px;
+    margin: 25px 0;
+}
+.col-3 h2{
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
+    text-decoration-color: lightgray;
+}
+.col-3 p{
+    font-size: 15px;
+}
+#nav-footer ul{
+    list-style-type: none;
+    padding: 0;
+}
+#nav-footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s ease-in-out;
+}
+#nav-footer a:hover{
+    color: #ee5253;
+    font-weight: 700;
+}
+
+#copyright{
+    background-color: rgb(33,46,62);
+}
+#copyright p{    
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+/******poster*******/
+#poster-section{
+    background-image: url(images/main.jpg);
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#poster-section h1{
+    font-size: 65px;
+    font-weight: 800;
+}
+#poster-section p{
+    font-size: 18px;
+    margin-top: -20px;
+}
+
+/******Icons Section*******/
+#icon-section{
+    padding: 40px 100px;
+    overflow: auto;
+    text-align: center;
+}
+#icon-section h2{
+    color: #ee5253;
+    font-size: 30px;
+    font-weight: 800;
+}
+#icon-section .icons-3{
+    width: 33.33%;
+    float: left;
+    padding: 30px 35px;
+}
+.icons-3 h3{
+    color: #ee5253;
+    font-weight: 800;
+}
+.icons-3 img{
+    width: 130px;
+}
+
+/******Contact Section*******/
+#contact-section{
+    background-color: #ee5253;
+    overflow: auto;
+    padding: 25px 100px;
+}
+#content{
+    float: left;
+    color: white;
+    width: 70%;
+}
+#button{
+    width: 30%;
+    float: left;
+    padding: 60px 7%;
+}
+#contact-section h2{
+    font-size: 32px;
+    font-weight: 800;
+}
+
+#button button{
+    padding: 15px 40px;
+    color: #ee5253;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+#button button:hover{
+    background-color: #af6767;
+    color: white;
+}
+
+/******Blog Section*******/
+#blog-section{
+    padding: 40px 100px;
+    overflow: auto;
+    text-align: center;
+}
+#blog-section h2{
+    color: #ee5253;
+    font-size: 30px;
+    font-weight: 800;
+}
+#blog-section .blog-3{
+    width: 33.33%;
+    float: left;
+    padding: 30px 35px;
+}
+.blog-3 h3{
+    color: #ee5253;
+    font-weight: 800;
+    font-size: 25px;
+}
+.blog-3 img{
+    width: 280px;
+    height: 220px;
+}
+.blog-3 a{
+    color: #ee5253;
+    text-decoration: none;
+    font-weight: 700;
+}
+.blog-3 a:hover{
+    color: gray;
+}
+
+/******Form*******/
+#form-section{
+    padding: 0px 100px;
+    background-color: #ee5253;
+    overflow: auto;
+}
+.col-2{
+    width: 50%;
+    float: left;
+    padding: 40px 30px
+}
+.col-2 h2{
+    font-size: 30px;
+    font-weight: 900;
+    text-align: right;
+    color: white;
+}
+
+#col-2-form{
+   margin-top: 28px;
+}
+
+.col-2 #email{
+    width: 65%;
+    padding: 10px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+}
+.col-2 #email:focus{
+    outline: none;
+}
+.col-2 #submit-button{
+    padding: 9px 30px;
+    color: #ee5253;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px
+}
+.col-2 #submit-button:hover{
+    background-color: #af6767;
+    color: white;
+}
+
+/******Mobile menu button will be hide on large screen*******/
+#cross-icon, #mobile-bar{
+    display: none;
+}
+
+/******Responsive for tablet*******/
+@media only screen and (max-width: 768px){
+    .section-padd{
+        padding: 0 20px;
+    }
+    #nav-menu a{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    #poster-section {
+        height: 450px;
+    }
+    #poster-section h1 {
+        font-size: 45px;
+    }
+    #poster-section p {
+        font-size: 16px;
+    }
+
+    #icon-section, #contact-section {
+        padding: 40px 50px;
+    }
+    #icon-section .icons-3 {
+        padding: 30px 15px;
+    }
+    #button {
+        padding: 60px 0 0 15px;
+    }
+
+    #blog-section {
+        padding: 40px 30px;
+    }
+
+    .blog-3 img {
+        width: 180px;
+        height: 140px;
+    }
+    #blog-section .blog-3 {
+        padding: 30px 20px;
+    }
+
+    #form-section{
+        padding: 25px 35px;
+    }
+
+    .col-2 h2 {
+        text-align: center;
+    }
+    .col-2 #submit-button {
+        padding: 9px 30px;
+        margin-top: 10px;
+        margin-left: 45px
+    }
+    .col-2 #email {
+        width: 75%;
+    }
+    .col-3 {
+        padding-right: 30px;
+    }
+    .section-padd {
+        padding: 0 40px;
+    }
+}
+
+/******Responsive for Mobile*******/
+@media only screen and (max-width: 500px){
+    .section-padd, #contact-section, #icon-section {
+        padding: 0 25px;
+    }
+    #poster-section h1 {
+        font-size: 35px;
+        padding-bottom: 15px;
+    }
+    #poster-section p {
+        font-size: 15px;
+    }
+    #icon-section .icons-3, #blog-section .blog-3, .col-2 #email, .col-3{
+        width: 100%;
+    } 
+    .icons-3 img {
+        width: 190px;
+    }
+    .icons-3 h3 {
+        font-size: 22px;
+    }
+
+    #content, #button{
+        width: 100%;
+        text-align: center;
+    }
+    #button{
+        margin-bottom: 30px;
+    }
+    .blog-3 img {
+        width: 250px;
+        height: 170px;
+    }
+
+    .col-2 {
+        width: 100%;
+        padding: 15px 10px;
+    }
+    .col-2 #submit-button{
+        width: 50%;
+        margin-left: 25%;
+        padding: 9px 8px;
+    }
+    .col-2{
+        padding-top: 0;
+    }
+
+    .col-3{
+        text-align: left;
+        padding: 0 40px 0 35px;
+    }
+}
+
+/******Responsive for Mobile menu*******/
+@media only screen and (max-width: 700px){
+    #nav-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 300px;
+        padding: 0;
+    }
+    #nav-menu li {
+        float: none;
+        display: block;
+        border-bottom: 1px solid rgb(247, 245, 245);
+    }
+    #cross-icon{
+        text-align: right;
+    }
+    .fa-times-circle{
+        font-size: 25px;
+    }
+
+    #nav-menu{
+        left: -300px;
+        transition: all 0.5s ease;
+    }
+    #mobile-bar{
+        font-size: 25px;
+        background-color: #ee5253;
+        padding: 10px 18px;
+        color: white;
+    }
+    #cross-icon, #mobile-bar{
+        display: block;
+    } 
+}

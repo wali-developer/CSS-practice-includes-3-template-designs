@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .header{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    padding: 20px;
+}
+
+.container .header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .header ul li{
+    list-style: none;
+}
+
+.container .header ul li a{
+    margin-right: 20px;
+    font-size: 13px;
+    text-decoration: none;
+    color: rgb(102, 101, 101);
+}
+
+.container .header ul li button{
+    padding: 8px 14px;
+    background: rgb(0, 102, 255);
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.container .main{
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .main .searchBox{
+    position: relative;
+    width: 100%;
+    margin: 20px;
+}
+
+.container .main .searchBox .search{
+    width: 100%;
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 60px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+}
+
+.container .main .searchBox .search:hover{
+    outline: none;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container .main .searchBox .icons{
+    position: absolute;
+    top: 0;
+    padding: 12px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .main .buttons{
+    margin-top: 20px;
+}
+
+.container .main .buttons button{
+    margin-right: 6px;
+    padding: 12px 20px;
+    color: #555;
+    background-color: rgb(247, 247, 247);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.container .main .buttons button:hover{
+    border: 1px solid rgb(204, 203, 203);
+}
+
+/*.container .main .languages{
+    display: flex;
+    margin-top: 30px;
+    flex-direction: row;
+}*/
+
+.container .main .languages ul {
+    display: flex;
+    margin-top: 30px;
+}
+
+.container .main .languages ul li a{
+    list-style: none;
+    margin: 0 5px;
+    font-size: 13px;
+    color: blue;
+    text-decoration: none;
+}
+
+.container .main .languages ul li a:hover {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.container .main .languages ul li:nth-child(1){
+    color: black;
+    text-decoration: none;
+    cursor:auto
+}
+
+.container .footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+.container .footer .row{
+    padding: 15px 25px;
+    border: 1px solid rgb(236, 236, 236);
+}
+
+.container .footer .row.first p{
+    color: gray;
+}
+
+.container .footer .row.second{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container .footer .row.second ul{
+    display: flex;
+}
+
+.container .footer .row.second ul  li a{
+    list-style: none;
+    margin: 0 15px;
+    font-size: 14px;
+    text-decoration: none;
+    color: gray;
+}
+

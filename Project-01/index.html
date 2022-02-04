@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" 
+    crossorigin="anonymous">
+</head>
+<body>
+
+<!--Upper Section that contains Image slider and navigation bar-->
+
+    <div id="section">
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a> </li>
+                <li><a href="#band-section">Band</a></li>
+                <li><a href="#tour-section">Tour</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+                <li><a href="#">More</a>
+                    <ul>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="icon">
+                <img src="images/search.png" alt="Search Icon">
+            </div>
+        </div>
+
+        <div id="slider">
+            <figure class="slider-images">
+            <div>
+                <h2>Wali Ullah</h2>
+                <img src="images/la.jpg">
+            </div>
+
+            <div>
+                <h2>Abbas</h2>
+                <img src="images/ny.jpg">
+            </div>
+
+            <div>
+                <h2>Usman </h2>
+                <img src="images/chicago.jpg">
+            </div>
+            </figure>
+        </div>
+    </div>
+
+<!--Band Section-->
+
+    <div id="band-section">
+        <h1>The Band</h1>
+        <p class="para">we love music</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, deleniti? Magni 
+            molestias deleniti non, eum excepturi dolor facere voluptate quas aut natus officia 
+            delectus, recusandae ratione quasi voluptates doloremque aperiam? aut nature office
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, deleniti? Magni 
+            molestias deleniti non, eum excepturi dolor facere voluptate quas aut natus officia 
+            delectus, recusandae ratione quasi voluptates doloremque aperiam?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, deleniti? Magni 
+            molestias deleniti non, eum excepturi dolor facere voluptate quas aut natus officia 
+            delectus, recusandae ratione quasi voluptates doloremque aperiam?</p>
+
+        <div id="band-images">
+            <figure class="bandimage">
+                <img src="images/bandmember.jpg" alt="abc">
+                <figcaption style="top: 5%; left: 14%;">Name</figcaption>
+            </figure>
+            <figure class="bandimage">
+                <img src="images/bandmember.jpg" alt="abc">
+                <figcaption style="top: 5%; left: 46%;">Name</figcaption>
+            </figure>
+            <figure class="bandimage">
+                <img src="images/bandmember.jpg" alt="abc">
+                <figcaption style="top: 5%; left: 79%;">Name</figcaption>
+            </figure>
+        </div>
+    </div>
+
+<!--Tour Section-->
+
+    <div id="tour-section">
+        <h1>Tour Dates</h1>
+        <p class="para">Remember to book your tickets</p>
+
+        <div class="tour-months">
+            <div class="months september">September  <span>Sold 0ut</span></div>
+            <div class="months october">October  <span>Sold 0ut</span></div>
+            <div class="months november">November <span class="number">3</span></div>
+        </div>
+        <div id="tour-images">
+            <figure class="tour-image">
+                <img src="images/newyork.jpg" alt="New York">
+                <figcaption>
+                    <div class="content">
+                        <h4>New York</h4> <br>
+                        <span>Fri 27 Nov 2016</span> <br>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button>Buy Tickets</button>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="tour-image">
+                <img src="images/paris.jpg" alt="Paris">
+                <figcaption>
+                    <div class="content">
+                        <h4>Paris</h4> <br>
+                        <span>Sat 28 Nov 2016</span> <br>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button>Buy Tickets</button>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="tour-image">
+                <img src="images/sanfran.jpg" alt="San francisco">
+                <figcaption>
+                    <div class="content">
+                    <h4>San Francisco</h4> <br>
+                    <span>Sun 29 Nov 2016</span> <br>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button>Buy Tickets</button>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+
+<!--Contact Section-->
+
+    <div id="contact-section">
+        <h1>Contact</h1>
+        <p class="para">Fan?Drop a note!</p>
+
+        <div class="contact">
+            <div class="address-phone-email">
+                <div class="address">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Peshawar, Pakistan</p>
+                </div>
+                <div class="phone">
+                    <i class="fas fa-phone"></i>
+                    <p>+92 30837977</p>
+                </div>
+                <div class="email">
+                    <i class="fas fa-envelope"></i>
+                    <p>contact@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="inputfield">
+                <input type="text" name="Name" id="name" placeholder="Name">
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <input type="text" name="message" id="message" placeholder="Message" class="third-input">
+            <button>send</button>
+        </div>
+    </div>
+    <img src="images/map.jpg" alt="Map" class="map">
+
+<!--Footer Section-->
+
+    <div class="footer">
+        <div class="social-links">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="far fa-bell"></i>
+            <i class="fab fa-pinterest"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <p>Made with ♡ by Wali Ullah</p>
+    </div>
+</body>
+</html>

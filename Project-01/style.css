@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#section{
+    width: 100%;
+    padding: 0;
+}
+
+#slider{
+    overflow: hidden;
+}
+
+#slider .slider-images{
+    margin: 0;
+    left: 0;
+    width: 300%;
+    position: relative;
+    animation: 8s slider infinite;
+}
+
+#slider .slider-images div img{
+    width: 33.3%;
+    float: left;
+}
+
+@keyframes slider{
+    0% {left: 0%;}
+    25% {left: 0%;}
+    50% {left: -100%;}
+    75% {left: -200%;}
+    100% {left: -200%;}
+}
+
+#slider .slider-images div h2{
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    color: #fff;
+    font-size: 50px;
+}
+
+/*----Navigation Bar----*/
+
+.navbar{
+    width: 100%;
+    display: flex;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 50px;
+}
+
+
+.navbar ul li {
+    list-style: none;
+    margin: 15px 5px;
+}
+
+.navbar ul a{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.navbar ul a:hover{
+    color: black;
+    background-color: rgb(185, 184, 184);
+    padding: 20px;
+}
+
+
+.navbar ul ul{
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+
+.navbar ul ul li{
+    color: black;
+    background-color: rgb(185, 184, 184);
+    padding: 15px;
+    margin-right: 85%;
+}
+
+.navbar ul li:hover > ul{
+    display: block;
+}
+
+.navbar .icon{
+    width: 20%;
+}
+
+.navbar .icon img{
+   width: 25px;
+   justify-content: center;
+   position: absolute;
+   top: 15px;
+   right: 10px;
+   padding: 15px;
+   margin-top: -15px;
+   margin-right: -10px;
+   margin-bottom: -10px;
+}
+
+.navbar .icon img:hover{
+    background-color: rgb(255, 72, 40);
+    border: 1px solid black;
+}
+
+/*----Band Section----*/
+
+#band-section{
+    padding: 80px 280px;
+}
+
+#band-section h1{
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#band-section .para{
+    text-align: center;
+    color: rgb(117, 117, 117);
+    padding: 20px 0;
+}
+
+#band-section p{
+    text-align: justify;
+    color: black;
+    padding-bottom: 45px;
+}
+
+#band-images{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-basis: 20%;
+    position: relative;
+}
+
+#band-images .bandimage{
+    width: 20%;
+    padding: 50px;
+}
+
+#band-images .bandimage img{
+    width: 100%;
+    height: 150px;
+
+}
+
+#band-images .bandimage figcaption{
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+/*--Tour Section--*/
+
+#tour-section{
+    padding: 80px 280px;
+    background-color: black;
+}
+
+#tour-section h1{
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+}
+
+#tour-section .para{
+    text-align: center;
+    color: rgb(117, 117, 117);
+    padding: 20px 0;
+}
+
+#tour-section .tour-months{
+    width: 97.5%;
+}
+
+#tour-section .tour-months .months{
+    padding: 12px;
+    background-color: #fff;
+    border: 0.5px solid rgb(212, 212, 212);
+    color: rgb(54, 54, 54);
+    font-size: 15px;
+}
+
+#tour-section .tour-months .months span{
+    padding: 6px;
+    color: #fff;
+    background-color: rgb(247, 82, 41);
+    font-size: 14px;
+    margin-left: 13px;
+}
+
+#tour-section .tour-months .months .number{
+    padding: 5px 8px;
+    background-color: black;
+    color: #fff;
+    border-radius: 50%;
+    margin-left: 97%;
+    
+}
+
+/*--Tour Section Images with Captions--*/
+#tour-images{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    position: relative;
+}
+
+#tour-images .tour-image{
+    width: 33.3%;
+    padding: 30px 0;
+    padding-right: 20px;
+    padding-left: -10px; 
+}
+
+#tour-images .tour-image img{
+    width: 100%;
+    height: 200px;
+}
+
+#tour-images .tour-image figcaption{
+    width: 97.5%; 
+    background-color: #fff;  
+    padding-right: 6px;
+    margin-top: -4px;
+}
+
+#tour-images .tour-image figcaption .content{
+    background-color: #fff;
+    padding: 18px;
+}
+
+#tour-images .tour-image figcaption .content h4{
+    color: black;
+
+}
+
+#tour-images .tour-image figcaption .content span{
+    color: rgb(88, 87, 87);
+}
+
+#tour-images .tour-image figcaption .content p{
+    color: rgb(32, 32, 32);
+    padding: 20px 0;
+}
+
+#tour-images .tour-image figcaption .content button{
+    padding: 12px;
+    color: #fff;
+    background-color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+#tour-images .tour-image figcaption .content button:hover{
+    color: black;
+    background-color: rgb(197, 194, 194);
+    font-weight: 500;
+}
+
+/*----Contact Section----*/
+
+#contact-section{
+    padding: 80px 280px;
+    background-color: #fff;
+    
+}
+
+#contact-section h1{
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: black;
+}
+
+#contact-section .para{
+    text-align: center;
+    color: rgb(117, 117, 117);
+    padding: 20px 0;
+    padding-bottom: 50px;
+}
+
+#contact-section .contact{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+#contact-section .contact .address-phone-email{
+    width: 50%;
+    align-content: flex-start;
+}
+
+#contact-section .contact .address-phone-email .address, .phone, .email{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 4px 0;
+}
+
+#contact-section .contact .address-phone-email .address, .phone, .email p{
+    font-size: 18px;
+    color: rgb(65, 65, 65);
+}
+
+#contact-section .contact .address-phone-email .address i, .phone i, .email i{
+    padding: 0 15px;
+    color: black;
+}
+
+#contact-section .contact .inputfield{
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;  
+}
+
+#contact-section .contact .inputfield input{
+    width: 43%;
+    height: 38px;
+    border: 1px solid rgb(190, 189, 189);
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+#contact-section .contact .third-input{
+    position: absolute;
+    left:  50%;
+    top: 45px;
+    width: 45%;
+    height: 38px;
+    border: 1px solid rgb(190, 189, 189);
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+#contact-section .contact button{
+    position: absolute;
+    left:  87.5%;
+    top: 100px;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: black;
+    border: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+#contact-section .contact button:hover{
+    color: black;
+    background-color: rgb(197, 194, 194);
+}
+
+.map{
+    width: 100%;
+}
+
+/*----Footer Section----*/
+
+.footer{
+    padding: 60px 280px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.footer .social-links{
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.footer .social-links i{
+    font-size: 28px;
+    padding: 4px;
+    color: rgb(110, 110, 110);
+    border-radius: 50%;
+}
+
+.footer .social-links i:hover{
+    opacity: 0.5;
+}
+
+.footer .social-links p{
+    font-size: 15px;
+    font-weight: 500; 
+}
+
+@media screen and (max-width: 700px){
+    .band-section, .tour-section, .contact-section, .footer{
+        padding: 0;
+        width: 100%;
+    }
+}
